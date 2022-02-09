@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    display: inline-grid;
+    grid-template-rows: 25vh 38vh 37vh;
+    grid-template-columns: 1fr 5fr 2fr;
+    grid-template-areas:
+        "sidebar header header"
+        "sidebar article announcements"
+        "sidebar article trending";
+    height: 100vh;
+    width: 100vw;
+}
+
+.container div {
+    padding: 10px;
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    color: white;
+}
+
+.header {
+    background-color: #393f4d;
+    grid-area: header;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.searchbar {}
+
+.welcome-info {
+    display: flex;
+    
+
+}
+
+.profile-pic {
+    height: 40px;
+    width: 40px;
+    background-color: red;
+    border-radius: 15px;
+}
+
+.welcome-info div {
+    text-align: left;
+}
+
+.alerts-info {
+    text-align: right;
+}
+
+.post-buttons {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.post-buttons button {
+    height: min-content;
+    padding: 10px 15px;
+    background-color: blue;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    font-weight: 900;
+    opacity: .8;
+
+}
+
+.post-buttons button:hover {
+    opacity: 1;
+}
+
+.sidebar {
+    background-color: #FF7755;
+    grid-area: sidebar;
+    display: grid;
+    grid-template-rows: 1fr 3fr 2fr;
+    gap: 40px;
+    text-align: left;
+}
+
+.announcements {
+    grid-area: announcements;
+    background-color: green;
+}
+
+.trending {
+    grid-area: trending;
+    background-color: lightblue;
+}
+
+
+.article {
+    background-color: #bccbde;
+    grid-area: article;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    overflow-y: scroll;
+}
+
+.article p {
+    font-size: 18px;
+    font-family: sans-serif;
+    color: white;
+    text-align: left;
+}
+
+.article .card {
+    background-color: #FFFFFF;
+    color: black;
+    text-align: center;
+}
+
+.card p {
+    color: black;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.card .title {
+    font-size: 18px;
+    text-align: center;
+}
+
+/* @media only screen and (max-width: 1220px) {
+    .header {
+      gap: 100px;
+    }
+  }
+  @media only screen and (max-width: 960px) {
+    .header {
+      gap: 50px;
+    }
+  }
+  
+  @media only screen and (max-width: 660px) {
+    .header {
+      gap: 25px;
+    }
+  }
+  
+  @media only screen and (max-width: 520px) {
+    .header {
+      gap: 1px;
+    }
+  } */
