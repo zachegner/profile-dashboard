@@ -1,12 +1,11 @@
 :root {
-    --blue: #2666cf;
-    --darkblue: #03045e;
-    --darkteal: #00B4D8;
-    --babyblue: #90e0ef;
+    --blue: #3e6990;
+    --darkblue: #040547;
+    --babyblue: #b0d7ff;
     --skyblue: #CAf0f8;
-    --offwhite: #f5f2e7;
-    --gray: #395B64;
-    --darkgray: #2c3333;
+    --offwhite: #eae8ff;
+    --gray: #d8d5db;
+    --darkgray: #050517;
 }
 
 * {
@@ -19,7 +18,7 @@
 body {
     min-width: 500px;
     margin: 5px;
-    background-color: var(--offwhite);
+    background-color: var(--gray);
 }
 
 .container {
@@ -36,7 +35,7 @@ body {
 }
 
 .container div {
-    padding: 15px;
+    /* padding: 15px; */
     border-radius: 15px;
     font-size: 1.2rem;
     font-family: 'Open Sans', sans-serif;
@@ -56,6 +55,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 40% 60%;
     min-height: 150px;
+    padding: 15px;
 }
 
 .searchbar {
@@ -77,8 +77,8 @@ body {
 
 #search-btn,
 #alert-btn {
-    width:24px;
-    height:24px
+    width: 24px;
+    height: 24px
 }
 
 img {
@@ -92,7 +92,7 @@ img {
     background-image: url("/images/profilepic-2022.jpeg");
     background-size: contain;
     border-radius: 50%;
-    background-repeat:round;
+    background-repeat: round;
 }
 
 .small {
@@ -141,7 +141,7 @@ img {
     font-weight: 900;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     opacity: .9;
-    transition-duration: 0.4s;
+    transition-duration: 0.3s;
 }
 
 .post-buttons button:hover {
@@ -158,6 +158,7 @@ img {
     gap: 20px;
     text-align: left;
     justify-items: start;
+    padding: 15px;
 }
 
 .logo {
@@ -166,11 +167,12 @@ img {
 }
 
 #dash-logo {
-    width: 24px;
-    height: 24px;
+    width: 40px;
+    height: 40px;
     background-image: url("/Icons/view-dashboard.svg");
-    background-repeat:round;
+    background-repeat: round;
     border-radius: 0;
+    background-size: 40px 40px;
 }
 
 .logo p {
@@ -196,24 +198,26 @@ img {
 .sidebar a {
     color: inherit;
     text-decoration: none;
+    transition-duration: .3s;
 }
 
-.sidebar a:hover {
-    color: var(--darkgray);
-    text-shadow: 2px 2px 5px var(--gray);
-    transform: scale(1.1);
+.sidebar li a:hover {
+    text-shadow: 2px 2px 5px var(--darkgray);
+    transform: translateX(2px);
 }
 
 .announcements {
     grid-area: announcements;
-    background-color: var(--darkteal);
-    border-radius: 15px;
+    background-color: var(--babyblue);
+    padding: 15px;
+    text-align: center;
 }
 
 .trending {
     grid-area: trending;
-    background-color: var(--darkteal);
-    border-radius: 15px;
+    background-color: var(--babyblue);
+    padding: 15px;
+    text-align: center;
 }
 
 .announcements p,
@@ -223,7 +227,7 @@ img {
 
 
 .article {
-    background-color: var(--darkteal);
+    background-color: var(--babyblue);
     grid-area: article;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -231,20 +235,22 @@ img {
     gap: 25px;
     grid-auto-rows: 200px;
     overflow: auto;
+    padding: 15px;
 }
 
 .article p {
     font-size: 18px;
     font-family: sans-serif;
-    color: var(--skyblue);
+    color: var(--gray);
     text-align: left;
 }
 
 .article .card {
-    background-color: var(--skyblue);
+    background-color: var(--offwhite);
     color: black;
     text-align: center;
     border-radius: 15px;
+
 }
 
 .card p {
@@ -280,7 +286,7 @@ img {
     #dash-logo {
         width: 24px;
         height: 24px;
-        padding: 0;
+        background-size: 24px 24px;
     }
 
     #input-bar {
@@ -298,7 +304,7 @@ img {
         overflow-y: scroll;
         grid-auto-rows: 1fr;
     }
-    
+
 
     .alerts-info {
         display: none;
