@@ -6,6 +6,23 @@
     --offwhite: #eae8ff;
     --gray: #d8d5db;
     --darkgray: #050517;
+    scrollbar-color: var(--blue) var(--gray);
+    scrollbar-width: thin;
+    
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+ 
+.article::-webkit-scrollbar-track {
+    background-color: var(--babyblue);
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: var(--blue); 
 }
 
 * {
@@ -19,6 +36,8 @@ body {
     min-width: 500px;
     margin: 5px;
     background-color: var(--gray);
+    scrollbar-color: var(--blue);
+    scrollbar-width: thin;
 }
 
 .container {
@@ -31,7 +50,7 @@ body {
         "sidebar article trending";
     height: 99vh;
     width: 99vw;
-    gap: 15px;
+    gap: 20px;
 }
 
 .container div {
@@ -46,6 +65,7 @@ body {
 
 .container>div {
     box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.4);
+    border: 2px outset rgba(0, 0, 0, 0.2);
 }
 
 .header {
@@ -55,7 +75,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 40% 60%;
     min-height: 150px;
-    padding: 15px;
+    padding: 30px;
 }
 
 .searchbar {
@@ -87,8 +107,8 @@ img {
 }
 
 .profile-pic {
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
     background-image: url("/images/profilepic-2022.jpeg");
     background-size: contain;
     border-radius: 50%;
@@ -103,6 +123,7 @@ img {
 .welcome-info {
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 
 .welcome-info div {
@@ -236,6 +257,8 @@ img {
     grid-auto-rows: 200px;
     overflow: auto;
     padding: 15px;
+    scrollbar-color: var(--blue) var(--babyblue);
+    scrollbar-width: thin;
 }
 
 .article p {
