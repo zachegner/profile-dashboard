@@ -90,9 +90,6 @@ body {
 }
 
 #input-bar:focus {
-    text-decoration: none;
-    border: none;
-    border-style: none;
     outline: var(--blue) outset 2px;
 }
 
@@ -110,7 +107,7 @@ img {
 .profile-pic {
     height: 50px;
     width: 50px;
-    background-image: url("/images/profilepic-2022.jpeg");
+    background-image: url("./images/profilepic-2022.jpeg");
     background-size: contain;
     border-radius: 50%;
     background-repeat: round;
@@ -191,7 +188,7 @@ img {
 #dash-logo {
     width: 40px;
     height: 40px;
-    background-image: url("/Icons/view-dashboard.svg");
+    background-image: url("./Icons/view-dashboard.svg");
     background-repeat: round;
     border-radius: 0;
     background-size: 40px 40px;
@@ -351,3 +348,24 @@ img {
         width: 200px
     }
 }
+<<<<<<< HEAD
+=======
+
+/*   @media only screen and (max-width: 960px) {
+    .header {
+      gap: 50px;
+    }
+  }
+  
+  @media only screen and (max-width: 660px) {
+    .header {
+      gap: 25px;
+    }
+  }
+  
+  @media only screen and (max-width: 520px) {
+    .header {
+      gap: 1px;
+    }
+  } */
+>>>>>>> 30267baa5c4ab02136d337d45816de5f134f14cc
