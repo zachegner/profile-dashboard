@@ -109,7 +109,7 @@ img {
 .profile-pic {
     height: 50px;
     width: 50px;
-    background-image: url("/images/profilepic-2022.jpeg");
+    background-image: url("./images/profilepic-2022.jpeg");
     background-size: contain;
     border-radius: 50%;
     background-repeat: round;
@@ -190,7 +190,7 @@ img {
 #dash-logo {
     width: 40px;
     height: 40px;
-    background-image: url("/Icons/view-dashboard.svg");
+    background-image: url("./Icons/view-dashboard.svg");
     background-repeat: round;
     border-radius: 0;
     background-size: 40px 40px;
